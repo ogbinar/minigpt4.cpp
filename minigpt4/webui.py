@@ -84,8 +84,8 @@ def start(share: bool):
                 history = gr.State()
 
                 with gr.Row():
-                    submit = gr.Button(value="Send message", variant="secondary").style(full_width=True)
-                    clear = gr.Button(value="Reset", variant="secondary").style(full_width=False)
+                    submit = gr.Button(value="Send message", variant="secondary")#.style(full_width=True)
+                    clear = gr.Button(value="Reset", variant="secondary")#.style(full_width=False)
                     # stop = gr.Button(value="Stop", variant="secondary").style(full_width=False)
 
         clear.click(clear_state, inputs=[history, image, message], outputs=[history, image, message, upload_button], queue=False)
